@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_calendar"
+        android:layout_marginTop="100sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese un año para validar si es bisiesto"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:layout_margin="10sp"
+        />
+    <EditText
+        android:id="@+id/etxtnombre"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="INGRESE EL AÑO"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:inputType="number"
+
+        />
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="VALIDAR"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>
